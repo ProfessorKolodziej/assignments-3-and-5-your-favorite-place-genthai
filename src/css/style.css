@@ -1,12 +1,172 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
-	}
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  header img {
+    width: 100%;
+	max-width: 400px;
+	height: auto;
+	border-radius: 10px;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+  
+  .section-content {
+    padding: -20px;
+    margin-bottom: 10px;
+  }
+
+
+  .Intro {
+	background-color: #9AC9F4;
+	padding: 3px;
+	margin: 10px;
+	text-align: center;
+	color: #1E1E1E;
+    font-family: 'Neucha', cursive;
+    font-size: 24px;
+  }
+
+  h2 {
+	padding: 3px;
+	margin: 10px;
+	text-align: center;
+	color: #1E1E1E;
+    font-family: 'Neucha';
+    font-size: 24px;
+  }
+  
+  li {
+	padding: 3px;
+	margin: 10px;
+	text-align: left;
+	color: #1E1E1E;
+    font-family: 'Neucha', cursive;
+    font-size: 15px;
+  }
+  ol, ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  strong {
+    font-size: 16px;
+    font-family: 'Neuton', serif;
+  }
+  
+  p {
+    font-size: 14px;
+    font-family: 'Neucha', cursive;
+	padding: 3px;
+	margin: 10px;
+	text-align: left;
+	color: #1E1E1E;
+  }
+  
+  .link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  section img {
+    max-width: 40%;
+    height: small;
+    border-radius: 3px;
+    margin-bottom: 2px;
+	padding: 3px;
+	margin: 10px;
+    
+  }
+
+section ol {
+    padding-bottom: 100px;
 }
 
-@media screen and (width >= 500px) {
-	#some-id {
-		color: red;
-	}
+.top-cafes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-<
+
+@media screen and (width >= 834px) {
+	h1{
+		font-size: 50px;
+	}
+	h2{
+		font-size: 100px;
+	}
+	li { 
+		font-size: 50px;
+	}
+	p{
+		font-size: 25px;
+	}
+	strong{
+		font-size: 22px;
+	}
+	li{
+		font-size: 25px;
+	}
+	.Cafes ol {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 5%;
+		align-items: start;
+		padding: 3px;
+		margin-bottom: 215px;
+	}
+
+}
+@media screen and (width >= 1000px) {
+	h1{
+		font-size: 75px;
+	}
+	h2{
+		font-size: 150px;
+	}
+	li { 
+		font-size: 75px;
+	}
+	p{
+		font-size: 25px;
+	}
+	strong{
+		font-size: 35px;
+	}
+	li{
+		font-size: 35px;
+	}
+	.Cafes ol {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 4%;
+		align-items: start;
+		padding: 3px;
+		margin-bottom: 75px;
+	}
+
+}
